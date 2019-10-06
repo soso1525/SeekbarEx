@@ -1,6 +1,7 @@
 package com.example.seekbarex;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.databinding.DataBindingUtil;
 import android.graphics.Rect;
 import android.os.Bundle;
@@ -64,5 +65,9 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+    }
+
+    public void graph(View view) {
+        startActivity(new Intent(this, GraphActivity.class));
     }
 }

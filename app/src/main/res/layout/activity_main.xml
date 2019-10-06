@@ -1,20 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout>
 
-    <android.support.constraint.ConstraintLayout
-        android:id="@+id/main_layout"
-        xmlns:android="http://schemas.android.com/apk/res/android"
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/main_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".MainActivity">
 
+        <Button
+            android:id="@+id/btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:onClick="graph"
+            android:text="graph"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
         <android.support.v7.widget.AppCompatSeekBar
             android:id="@+id/progressbar"
-            android:max="60"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
+            android:max="60"
             android:maxHeight="8dp"
             android:minHeight="8dp"
             android:progress="20"
